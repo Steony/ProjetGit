@@ -1,0 +1,342 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #f5f7fa;
+    color: #1a1f36;
+    line-height: 1.5;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-left,
+.header-center,
+.header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    justify-content: center;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #1a1f36;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #1a1f36;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f7fa;
+}
+
+/* Search bar styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    padding: 0.5rem;
+    width: 400px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    width: 100%;
+    outline: none;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+/* Profile section styles */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notifications,
+.messages {
+    color: #6b7280;
+    cursor: pointer;
+}
+
+/* Dashboard layout */
+.dashboard {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.top-row,
+.bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Profile card styles */
+.profile-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.label {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* Activity feed styles */
+.activity-feed {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.skills {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.skill-badge {
+    background-color: #e5e7eb;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+}
+
+/* Company section styles */
+.company-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.signup-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.signup-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Bottom sections styles */
+.suggestions,
+.top-profiles,
+.top-jobs {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.suggestion-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.follow-btn {
+    background-color: #e5e7eb;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.mini-profile {
+    text-align: center;
+}
+
+.mini-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.job-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.job-item .company {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.job-item .rate {
+    color: #059669;
+    font-weight: bold;
+    margin-top: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+
+    .top-row,
+    .bottom-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .search-bar {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .search-bar {
+        width: 200px;
+    }
+
+    .profile-section {
+        gap: 1rem;
+    }
+}
