@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Dashboard</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <header class="top-bar">
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="search-bar">
+                <input type="text" placeholder="input/">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="top-actions">
+                <button class="icon-button"><i class="fas fa-bell"></i></button>
+                <button class="icon-button"><i class="fas fa-question-circle"></i></button>
+                <button class="icon-button"><i class="fas fa-user-circle"></i></button>
+            </div>
+        </header>
+
+        <div class="content">
+            <nav class="sidebar">
+                <div class="nav-item active">
+                    <i class="fas fa-sliders-h"></i>
+                    <span>Parameters</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>Brand</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-key"></i>
+                    <span>Password</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Request</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Security</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-user-secret"></i>
+                    <span>Privacy</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-ban"></i>
+                    <span>Block</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-user-slash"></i>
+                    <span>Disable account</span>
+                </div>
+            </nav>
+
+            <main class="main-content">
+                <h1>PARAMETERS</h1>
+                <div class="settings-group">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Notification</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet aliquot nisi pellentesque elementum. Non tellus sit mattis lectus in minima aliquam habitant praesent. Interdum qerdia lorem bibe eget fugiat.</p>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Notification</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet aliquot nisi pellentesque elementum. Non tellus sit mattis lectus in minima aliquam habitant praesent. Interdum qerdia lorem bibe eget fugiat.</p>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Tchat</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet aliquot nisi pellentesque elementum. Non tellus sit mattis lectus in minima aliquam habitant praesent. Interdum qerdia lorem bibe eget fugiat.</p>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-primary">SAVE</button>
+                    <button class="btn btn-secondary">RESET</button>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
