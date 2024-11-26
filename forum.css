@@ -1,0 +1,267 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: rgb(249, 250, 251);
+    color: rgb(55, 65, 81);
+    line-height: 1.5;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.navbar-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-button {
+    padding: 0.5rem;
+    border: none;
+    background: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: rgb(75, 85, 99);
+    transition: background-color 0.2s;
+}
+
+.icon-button:hover {
+    background-color: rgb(243, 244, 246);
+}
+
+.search-container {
+    flex: 1;
+    max-width: 32rem;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.5rem 2.5rem;
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: 0.5rem;
+    background-color: rgb(249, 250, 251);
+    font-size: 0.875rem;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: rgb(99, 102, 241);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(156, 163, 175);
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.clear-search {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(156, 163, 175);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.notification-button {
+    position: relative;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(239, 68, 68);
+    border-radius: 50%;
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 80rem;
+    margin: 5rem auto 2rem;
+    padding: 0 1rem;
+}
+
+.content-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.posts-container {
+    flex: 1;
+}
+
+/* Forum post styles */
+.forum-post {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 1rem;
+    transition: box-shadow 0.2s;
+}
+
+.forum-post:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.post-header h3 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(17, 24, 39);
+}
+
+.role {
+    font-size: 0.75rem;
+    color: rgb(107, 114, 128);
+}
+
+time {
+    font-size: 0.75rem;
+    color: rgb(156, 163, 175);
+}
+
+.post-text {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+/* Tag styles */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.tag-pink { background: rgb(252, 231, 243); color: rgb(157, 23, 77); }
+.tag-purple { background: rgb(237, 233, 254); color: rgb(109, 40, 217); }
+.tag-blue { background: rgb(219, 234, 254); color: rgb(29, 78, 216); }
+.tag-green { background: rgb(220, 252, 231); color: rgb(22, 101, 52); }
+.tag-red { background: rgb(254, 226, 226); color: rgb(185, 28, 28); }
+.tag-yellow { background: rgb(254, 243, 199); color: rgb(146, 64, 14); }
+
+/* Sidebar styles */
+.sidebar {
+    width: 20rem;
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .sidebar {
+        display: block;
+    }
+}
+
+.top-users {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 5rem;
+}
+
+.top-users h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: rgb(17, 24, 39);
+    margin-bottom: 1rem;
+}
+
+.users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.user-card:hover {
+    background-color: rgb(243, 244, 246);
+}
+
+.user-card .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.user-info h3 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(17, 24, 39);
+}
+
+.user-info .role {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.user-info .role i {
+    width: 0.875rem;
+    height: 0.875rem;
+}
