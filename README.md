@@ -1,4 +1,4 @@
-# ProjetGit 🎨
+# ConnectMe
 
 Prototype HTML/CSS réalisé dans un cadre d’apprentissage.
 
